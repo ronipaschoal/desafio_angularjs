@@ -1,0 +1,115 @@
+/* Estilos da página inicial */
+.login {
+  width: 40px;
+  margin-top: 5px;
+  float: right;
+  color: cornflowerblue;
+}
+.menu-opcoes {
+  margin-top: 5%;
+  text-align: center;
+}
+.menu-opcoes a {
+  padding-top: 20px;
+  width: 300px;
+  height: 250px;
+  background-color: rgb(128, 179, 255);
+  border: solid 1px cornflowerblue;
+  display: inline-block;
+  color: #fff;
+  box-sizing: border-box;
+  font-size: 25px;
+}
+.menu-opcoes a .unico {
+  margin: 14% 20% 0 20%;
+  width: 40%;
+  height: 40%;
+}
+.menu-opcoes a .duplo {
+  margin: 14% 0 0 0;
+  width: 25%;
+  height: 40%;
+  display: inline;
+}
+.menu-opcoes a .duplo:first-child {
+  margin-left: 10px;
+  margin-right: 0px;
+}
+.menu-opcoes a .duplo:last-child {
+  margin-left: 0px;
+}
+@media only screen and (max-width: 800px) {
+  .usuario-opcoes, .curso-opcoes {
+    float: left;
+    margin-left: 20% !important;
+    margin-right: 20% !important;
+    margin-top: 20px;
+    padding-top: 0px !important;
+    width: 60% !important;
+    height:150px !important;
+  }
+  .login {
+    display: none;
+  }
+  .desafio-konviva {
+    width: 100%;
+  }
+}
+
+
+/* Estilos das telas de listagem */
+.img-botao-adicionar-usuario, .img-botao-adicionar-curso {
+  width: 25px;
+  float: right;
+  color: #fff;
+  margin-top: -30px;
+  margin-right: 10px;
+}
+.img-botao-adicionar-curso {
+  margin-right: 18px;
+}
+.img-botao-adicionar-curso.img-mais {
+  margin-top: -25px;
+  margin-right: 0px;
+}
+.img-botao-pdf {
+  float: right;
+  font-size: 22px;
+}
+.lupa-buscar {
+  position: absolute;
+  z-index: 1111;
+  width: 20px;
+  color: #666;
+  margin-left: -30px;
+  margin-top: 10px;
+}
+.coluna-editar {
+  width: 70px;
+}
+.coluna-valor{
+  width: 120px;
+}
+@media only screen and (max-width: 800px) {
+  .esconde-mobile {
+    display: none;
+  }
+  .col-sm-12 {
+    margin-bottom: 10px !important;
+  }
+}
+
+/* Estilos das telas de edição */
+.input-group-prepend, .input-group-text {
+  width: 150px;
+}
+.input-group-text .text-danger{
+  margin: 0;
+  margin-left: 2px;
+}
+
+@media only print {
+  #cursando {
+    background-color: red;
+  }
+}

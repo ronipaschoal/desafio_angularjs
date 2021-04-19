@@ -1,0 +1,22 @@
+<h2 class="text-secondary">{{ titulo }}</h2>
+<br>
+<p class="text-danger">O campo usuário é obrigatório!</p>
+<p>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text bg-primary text-light text-uppercase" id="id">Usuário</span>
+    </div>
+    <select required class="form-control" id="id" name="id" aria-describedby="id" ng-model="usuario.id">
+      <option ng-repeat="usuario in usuariosNaoCadastrados" ng-value="usuario.id">{{ usuario.nome }}</option>
+    </select>
+  </div>
+</p>
+<br>
+<input type="hidden" id="id" name="id" ng-model="curso.id">
+<br>
+<div class="row">
+  <div class="col-8"></div>
+  <div class="col">
+    <button class="btn btn-primary text-uppercase btn-block" ng-click="salvar()">Salvar</button>
+  </div>
+</div>

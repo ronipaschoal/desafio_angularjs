@@ -1,0 +1,45 @@
+<h2 class="text-secondary">{{ titulo }}</h2>
+<br>
+<p class="text-danger">Todos os campos são obrigatórios!</p>
+<p>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text bg-primary text-light text-uppercase" id="nome">Nome</span>
+    </div>
+    <input type="text" class="form-control" id="nome" name="nome" aria-describedby="nome" ng-model="usuario.nome" placeholder="Digite o nome completo">
+  </div>
+</p>
+<p>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text bg-primary text-light text-uppercase" id="telefone">Telefone</span>
+    </div>
+    <input type="number" class="form-control" id="telefone" name="telefone" aria-describedby="telefone" ng-model="usuario.telefone" placeholder="Somente números">
+  </div>
+</p>
+<p>
+  <div class="input-group">
+    <div class="input-group-prepend">
+      <span class="input-group-text bg-primary text-light text-uppercase">Endereço</span>
+    </div>
+  </label>
+    <textarea class="form-control" aria-label="Endereço" id="endereco" name="endereco" ng-model="usuario.endereco"></textarea>
+  </div>
+</p>
+<p>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text bg-primary text-light text-uppercase" id="dataAdmissao">Admissão</span>
+    </div>
+    <input type="date" class="form-control" id="dataAdmissao" name="dataAdmissao" placeholder="yyyy-MM-dd" aria-describedby="dataAdmissao" ng-model="usuario.dataAdmissao">
+  </div>
+</p>
+<br>
+<input type="hidden" id="id" name="id" ng-model="usuario.id">
+<br>
+<div class="row">
+  <div class="col-8"></div>
+  <div class="col">
+    <button class="btn btn-primary text-uppercase btn-block" ng-click="salvar(acao)">Salvar</button>
+  </div>
+</div>

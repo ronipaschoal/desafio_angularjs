@@ -1,0 +1,45 @@
+<h2 class="text-secondary">{{ titulo }}</h2>
+<br>
+ <p class="text-danger">* Os campos Título, Descrição e Carga Horária são obrigatórios!</p>
+<p>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text bg-primary text-light text-uppercase" id="titulo">Título <p class="text-danger">*</p></span>
+    </div>
+    <input type="text" class="form-control" id="titulo" name="titulo" aria-describedby="titulo" ng-model="curso.titulo">
+  </div>
+</p>
+<p>
+  <div class="input-group">
+    <div class="input-group-prepend">
+      <span class="input-group-text bg-primary text-light text-uppercase">Descrição <p class="text-danger">*</p></span>
+    </div>
+  </label>
+    <textarea class="form-control" aria-label="Endereço" id="descricao" name="descricao" ng-model="curso.descricao"></textarea>
+  </div>
+</p>
+<p>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text bg-primary text-light text-uppercase" id="cargaHoraria">Carga Horária <p class="text-danger">*</p></span>
+    </div>
+    <input type="number" class="form-control" id="cargaHoraria" name="cargaHoraria" aria-describedby="cargaHoraria" ng-model="curso.cargaHoraria">
+  </div>
+</p>
+<p>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text bg-primary text-light text-uppercase" id="valor">Valor</span>
+    </div>
+    <input type="number" class="form-control" id="valor" name="valor" aria-describedby="valor" ng-model="curso.valor">
+  </div>
+</p>
+<br>
+<input type="hidden" id="id" name="id" ng-model="curso.id">
+<br>
+<div class="row">
+  <div class="col-8"></div>
+  <div class="col">
+    <button class="btn btn-primary text-uppercase btn-block" ng-click="salvar(acao)">Salvar</button>
+  </div>
+</div>
